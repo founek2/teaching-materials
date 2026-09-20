@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Rust lessons</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="description" content="Výukové materiály pro kurz Rustu" />
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/docsify/lib/themes/vue.css" />
+</head>
+
+<body>
+    <div id="app"></div>
+    <script>
+        window.$docsify = {
+            name: "Rust lessons",
+            repo: "",
+            auto2top: true,
+            search: {
+                paths: "auto",
+                placeholder: "Hledat",
+                noData: "Nic nenalezeno",
+                depth: 6,
+                namespace: "rust",
+            },
+            copyCode: {
+                buttonText: "Kopírovat",
+                errorText: "Chyba",
+                successText: "Zkopírováno",
+            },
+        };
+    </script>
+    <script src="https://unpkg.com/docsify/lib/docsify.min.js"></script>
+    <script src="https://unpkg.com/docsify/lib/plugins/search.min.js"></script>
+    <script src="https://unpkg.com/prismjs/components/prism-rust.min.js"></script>
+    <script src="https://unpkg.com/docsify-copy-code@2"></script>
+</body>
+
+</html>

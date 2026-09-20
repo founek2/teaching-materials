@@ -1,0 +1,11 @@
+Pro programátora napsání kódu pro novou funkcionalitu tzv. "na zelené louce" je jedna z těch jednodušších dovedností. Bohužel v praxi se často setkáváme s tím, že dostaneme za úkol rozšířit či upravit nějaký již existující program. I když se nám po prvním pohlédnutí do kódu chce často brečet, nechápeme jak někdo něco takového mohl napsat a nejraději bychom to vyhodily z okna. Bohužel kompletní přepsání většího programu/aplikace vyžaduje měsíce času a na to prostě není čas ani peníze. Tedy nám nezbývá než zatnout zubi, snažit se pochopit co kód dělá a upravit ho dle požadavků.
+A v tomto úkolu si něco podobného vyzkoušíme i když v jednodušší podobě, protože dostáváme kód naší věrně známé kalkulačky a naším cílem bude následující:
+
+-   Pochop jak kód funguje a co kalkulačka umí/neumí
+-   Odstranit duplicity - specificky načítání čísla je na dvou místech a mělo by být ošetřeno, tak aby uživatel mohl napsat pouze číslo, jinak je požádán o opětovné zadání. Stejný kód na dvou místech se nám, ale nelíbí. Napište tedy funkci, která se postará o korektní načtení čísla a toto číslo vrátí -> tuto funkci pak využijte na obou místech. Kód se tím zjednoduší a bude lépe čitelný
+    -Kalkulačka se po zadání q korektně neukončí - měl by se vypsat poslední print na konci souboru s textem "Program byl ukončen" - opravte implementaci aby po stisku "q" se ukončil cyklus a Python provedl předpřipravený print s daným textem
+-   Kalkulačka podporuje zadání jako první operátor a pak číslo -> v tomto případě není znám předchozí výpočet, protože ještě žádný nebyl -> jako předchozí výpočet se má použít výchozí hodnota 0. Implementujte, aby toto chování fungovalo (tato implementace vyžaduje přidání 1 řádku, tak si to správně rozmyslete)
+
+Většina úkolů vyžaduje naprosto minimální úpravy, proto si je nejprve dobře rozmyslete. Implementujte další libovolná vylepšení dle chuti - např. texty co se vypisují uživateli nejsou moc jednotné atd... Kalkulačka by si ale měla zachovat základní logiku - tedy kompletní přepsání kalkulačky bude hodnoceno 0 body. Přiložený soubor je referenčí implementace, kterou jsme již viděli https://python.iotplatforma.cloud/#/_examples/calc_normal
+
+Jako vždy pište na FB (případně email) pokud budete mít jakýkoli problém.

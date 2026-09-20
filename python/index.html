@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Python lessons</title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="description" content="Description" />
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/docsify/lib/themes/vue.css" />
+    <script defer src="https://analytics.iotdomu.cz/script.js" data-website-id="3ffa57ea-4052-4372-87d9-4e29a0a58a0d"></script>
+</head>
+
+<body>
+    <div id="app"></div>
+    <script>
+        window.$docsify = {
+            name: "Python lessons",
+            repo: "",
+            // loadSidebar: true,
+            auto2top: true,
+
+            search: {
+                paths: [
+                    "/lesson1", // => /lesson1.md
+                    "/lesson2", // => /lesson2.md
+                    "/lesson3", // => /lesson3.md
+                    "/lesson4", // => /lesson4.md
+                    "/lesson5", // => /lesson5.md
+                    "/lesson6", // => /lesson6.md
+                ],
+                placeholder: "Type to search",
+                noData: "No Results!",
+                // Headline depth, 1 - 6
+                depth: 6,
+                hideOtherSidebarContent: false, // whether or not to hide other sidebar content
+                // To avoid search index collision
+                // between multiple websites under the same domain
+                namespace: "python",
+            },
+            copyCode: {
+                buttonText: "Copy",
+                errorText: "Error",
+                successText: "Copied",
+            },
+
+            plugins: [
+                function (hook, vm) {
+                    hook.beforeEach(function (html) {
+                        return (
+                            html +
+                            "\n\n----\n\n" +
+                            '<a href="https://docsify.js.org" target="_blank" style="color: inherit; font-weight: normal; text-decoration: none;">Powered by docsify</a>'
+                        );
+                    });
+                },
+            ],
+            requestHeaders: {
+                // 10 minutes
+                'cache-control': 'max-age=600',
+            },
+
+        };
+    </script>
+    <script src="https://unpkg.com/docsify/lib/docsify.min.js"></script>
+    <script src="https://unpkg.com/docsify/lib/plugins/search.min.js"></script>
+    <script src="https://unpkg.com/prismjs/components/prism-python.min.js"></script>
+    <script src="https://unpkg.com/docsify-copy-code@2"></script>
+</body>
+
+</html>
