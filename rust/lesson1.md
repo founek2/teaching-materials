@@ -44,6 +44,19 @@ fn main() {
 `if` je výraz, může tedy vrátit hodnotu. Blok bez středníku na posledním řádku vrací hodnotu tohoto výrazu.
 
 ```rust
+let age = 20;
+
+let text = if age >= 18 { "dospělý" } else { "nezletilý" };
+// or
+let text: &str;
+if age >= 18 {
+    text = "dospělí";
+} else {
+    text = "nezletilý";
+}
+```
+
+```rust
 fn category(age: u8) -> &'static str {
     if age >= 18 {
         "dospělý"
@@ -96,8 +109,16 @@ Vypište čísla od 1 do 100. Pro násobky 3 vypište `Fizz`, pro násobky 5 `Bu
 
 ### 1.3 Kalkulačka
 
-Načtěte dvě celá čísla a operátor `+`, `-`, `*` nebo `/`. Operátor vyhodnoťte pomocí `match` a výsledek vypište. Neplatný vstup zatím může program ukončit pomocí `expect`.
+Načtěte dvě celá čísla a operátor `+`, `-`, `*` nebo `/`. Operátor vyhodnoťte pomocí `match` a výsledek vypište. Neplatný vstup zatím může program ukončit pomocí `panic!`.
 
 ## Na závěr
 
 Spusťte `cargo fmt` a `cargo check`. Chybové hlášky překladače jsou součást práce v Rustu: vždy si přečtěte řádek s popisem chyby i návrh opravy pod ním.
+
+Vyzkoušejte na následujícícm kódu:
+```rust
+fn main() {
+    let vysledek = 10 + "2";
+    println!("{vysledek}");
+}
+```
