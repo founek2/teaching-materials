@@ -4,6 +4,9 @@
 
 Založit projekt v Cargo, rychle projít známé konstrukce a ukázat, že Rust kontroluje typy již při překladu. Dnes ještě neřešíme všechny důvody chyb od překladače; důležité je naučit se jeho výstup číst.
 
+## Dokumentace
+- [Rust book](https://doc.rust-lang.org/book/) - krok za krokem vysvětlené jednotlivé části Rust
+
 ## První projekt
 
 ```sh
