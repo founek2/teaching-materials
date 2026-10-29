@@ -22,4 +22,6 @@
 
 [Lekce 10: Dokončení projektu](lesson10.md ':include')
 
+[Bonus: rustlings](lesson11.md ':include')
+
 [Časový rozvrh](timetable.md ':include')
