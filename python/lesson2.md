@@ -47,6 +47,18 @@ for number in range(1, 10):             <- začátek bloku1
 print("konec programu")                 <- globální kód
 ```
 
+## Globální proměna
+Občas se nám hodí si vytvořit předem proměnou a tu pak používat např. v cyklu. Nejčastěji pro nějakou celkový součet/maximum/minimum či jinou statistiku.
+
+```python
+maximum = 0
+for i in range(0, 100):
+    if i > maximum:
+        maximum = i
+
+print("Maximem z čísel 0-100 je " + maximum) 
+```
+
 ### 2.1.x Cykly
 
 * Vypište přesně 11x vaše jméno
