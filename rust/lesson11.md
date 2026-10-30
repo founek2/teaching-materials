@@ -27,7 +27,7 @@ fn make_animal_sound(animal: impl MakeSound) {
 
 fn main() {
     let dog = Dog { name: String::from("Ralf") };
-    make_animal_sound(animal);
+    make_animal_sound(dog);
 
     let cat = Cat { name: String::from("Snowball") };
     make_animal_sound(cat);
